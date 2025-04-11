@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/bg_top_curved"
+    android:layout_margin="5dp"
+    android:backgroundTint="@android:color/transparent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"/>
+    <!-- Curved Top View -->
+    <View
+        android:id="@+id/curvedBackground"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_top_curved" />
+
+    <!-- Content Inside Curved Layout -->
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Services"
+        android:textSize="9sp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:id="@+id/episode_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Services"
+        android:textSize="10sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Services"
+        android:textSize="12sp"
+        android:layout_alignTop="@id/curvedBackground"
+        android:gravity="center"
+        android:layout_above="@id/rating"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
